@@ -1,5 +1,5 @@
 # homebridge-modbus-relay
-Control Waveshare Modbus Relay Network Card trough Homebridge
+Control  [Waveshare Modbus 8-ch Ethernet Relay Module Card](https://www.waveshare.com/modbus-poe-eth-relay.htm) with Homebridge
 
 # homebridge-modbus-relay
 [![npm](https://img.shields.io/npm/v/homebridge-modbus-relay.svg?style=flat-square)](https://www.npmjs.com/package/homebridge-modbus-relay)
