@@ -13,7 +13,7 @@
     "url": "https://github.com/cruelviper"
   },
   "license": "MIT",
-  "description": "Waveshare Modbus Relais Card",
+  "description": "Waveshare Modbus Relay Card",
   "dependencies": {
     "modbus-serial": "^7.1.0",
     "homebridge": "^1.5.0"
