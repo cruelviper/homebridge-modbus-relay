@@ -1,0 +1,63 @@
+{
+    "pluginAlias": "ModbusRelay",
+    "pluginType": "accessory",
+    "schema": {
+        "properties": {
+            "name": {
+                "type": "string",
+                "title": "Relay Name",
+                "description": "The name of the relay as it will appear in Homebridge and Apple Home.",
+                "required": true,
+                "default": "Modbus Relay"
+            },
+            "ip": {
+                "type": "string",
+                "title": "Relay IP Address",
+                "description": "The IP address of the Modbus relay device.",
+                "required": true,
+                "default": "192.168.0.200"
+            },
+            "port": {
+                "type": "integer",
+                "title": "Relay Port",
+                "description": "The TCP port of the Modbus relay device.",
+                "required": true,
+                "default": 4196
+            },
+            "relay": {
+                "type": "integer",
+                "title": "Relay Address",
+                "description": "The relay address (0-7) to be controlled.",
+                "required": true,
+                "default": 0,
+                "minimum": 0,
+                "maximum": 7
+            },
+            "mode": {
+                "type": "string",
+                "title": "Relay Mode",
+                "description": "Select whether the relay should operate as a switch or with an automatic off timer.",
+                "required": true,
+                "default": "switch",
+                "enum": [
+                    {
+                        "value": "switch",
+                        "title": "Switch"
+                    },
+                    {
+                        "value": "auto-off",
+                        "title": "Auto-Off"
+                    }
+                ]
+            },
+            "autoOffDelay": {
+                "type": "integer",
+                "title": "Auto-Off Delay (ms)",
+                "description": "The delay in milliseconds before the relay automatically turns off (only applicable in Auto-Off mode).",
+                "default": 1000,
+                "minimum": 0
+            }
+        },
+        "required": ["name", "ip", "port", "relay", "mode"]
+    }
+}

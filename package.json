@@ -1,0 +1,32 @@
+{
+  "name": "homebridge-modbus-relay",
+  "displayName": "Waveshare Modbus ETH Relay",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["homebridge-plugin"],
+  "author": {
+    "name": "Sven Vogel",
+    "email": "svenvogel.mail@gmx.de",
+    "url": "https://github.com/cruelviper"
+  },
+  "license": "MIT",
+  "description": "Waveshare Modbus Relais Card",
+  "dependencies": {
+    "modbus-serial": "^7.1.0",
+    "homebridge": "^1.5.0"
+  },
+  "engines": {
+    "homebridge": ">=1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cruelviper/homebridge-modbus-relay.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cruelviper/homebridge-modbus-relay/issues"
+  },
+  "homepage": "https://github.com/cruelviper/homebridge-modbus-relay#readme"
+}
