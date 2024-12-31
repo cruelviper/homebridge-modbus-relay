@@ -1,7 +1,7 @@
 {
   "name": "homebridge-modbus-relay",
   "displayName": "Waveshare Modbus ETH Relay",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,9 +16,12 @@
   },
   "license": "MIT",
   "description": "Waveshare Modbus Relais Card",
+  "peerDependencies": {
+    "homebridge": ">=1.0.0",
+    "hap-nodejs": ">=0.9.0"
+  },
   "dependencies": {
-    "modbus-serial": "^7.1.0",
-    "homebridge": "^1.5.0"
+    "modbus-serial": "^8.0.0"
   },
   "engines": {
     "homebridge": ">=1.0.0"
